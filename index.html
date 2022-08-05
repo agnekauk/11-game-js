@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body class="body" id="body">
+    <div class="block">
+        <form name="guessNumber">
+            <div class="margin">
+                Guess a number from 0 to 100:
+            </div>
+            <input class="margin" type="number" name="number">
+            <button class="margin btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="block">
+        <form name="calculator" class="second-form">
+            <input class="for-sum" type="number" name="number1">
+            <input class="for-sum" type="number" name="number2">
+            <button class="equal-btn" type="submit">=</button>
+        </form>
+    </div>
+    <div class="block">
+        <form name="kmi-skaiciuokle" class="second-form">
+            <div>Į LENTELĘ ĮVESKITE DUOMENIS:</div>
+            <div class="explanation">Jūsų ūgis (metrais, pvz.: 1.68):</div>
+            <input class="for-kmi" type="number" name="height" step="0.01" min=1.00 max=2.30>
+            <div class="explanation">Jūsų svoris (kilogramais, pvz.: 50):</div>
+            <input class="for-kmi" type="number" name="weight" min=18 max=200>
+            <button class="btn" type="submit">SKAIČIUOTI KŪNO MASĖS INDEKSĄ</button>
+        </form>
+    </div>
+    <div class="block">
+        <form name="to-do-list" class="to-do-list">
+            <div class="input-list">
+                <input class="margin" type="text" name="list" placeholder="Įrašykite, ką norite pridėti į sąrašą">
+                <button class="margin btn" type="submit">Pridėti</button>
+            </div>
+            <ul name="sarasas">Sąrašas:
+            </ul>
+        </form>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+
+</html>
