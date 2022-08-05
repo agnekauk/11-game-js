@@ -9,7 +9,6 @@ console.log(luckyNumber);
 let count = 0;
 let answer = document.createElement("p");
 let counting = document.createElement("p2");
-let body = document.querySelector("body");
 let forma = document.forms["guessNumber"];
 
 function numcheck(lNum, gNum) {
@@ -32,8 +31,8 @@ forma.addEventListener("submit", function (e) {
     answer.textContent = numcheck(luckyNumber, guessing);
     count++;
     counting.textContent = count + " guesses were made.";
-    body.appendChild(answer);
-    body.appendChild(counting);
+    forma.appendChild(answer);
+    forma.appendChild(counting);
 })
 
 let calc = document.forms["calculator"];
